@@ -1,0 +1,237 @@
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.padding-top-bottom{
+    padding: 3% 0%;
+}
+.bg-light{
+    background-color: #f4f5f7;
+}
+.bg-cafe{
+    background-color: #fff3e3;
+}
+.bg-white{
+    background-color: white;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-left{
+    align-items: start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+/* custom style */
+nav{
+    padding: 1% 0%;
+}
+nav h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+nav h1 a{
+    gap: 0;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+
+}
+nav ul {
+    width: 26%;
+}
+.logo-img{
+    width: auto;
+    height: 70px;
+    margin-right: -3%;
+}
+
+.bg-img {
+    background-image: url(https://www.shutterstock.com/image-vector/realistic-interior-3d-sofa-floor-260nw-2512392063.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+.custom-margin-bottom {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.content p {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content pre{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .fa-angle-right {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.cart-table {
+    width: 65%;
+}
+.cart-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.cart-table th {
+    font-weight: bold;
+    background-color: #fff3e3;
+}
+.cart-table .product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.cart-table .quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.cart-table .remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aa5d4b;
+    font-size: 18px;
+}
+
+.cart-totals {
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cart-totals h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.totals-row {
+    margin-bottom: 20px;
+}
+.totals-row p {
+    font-weight: bold;
+}
+.totals-row p:first-child {
+    font-weight: normal;
+}
+.total-price {
+    font-size: 24px;
+    color: #b88e2f;
+}
+.checkout-btn {
+    background-color: white;
+    border: 1px solid #b88e2f;
+    color: #b88e2f;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.feature-item {
+    gap: 15px;
+}
+.feature-item i {
+    font-size: 35px;
+    color: #333;
+}
+.feature-item strong {
+    font-size: 20px;
+    font-weight: 600;
+}
+.feature-item span {
+    color: #999;
+    font-size: 14px;
+}
+
+footer {
+    padding: 4% 0;
+    border-top: 1px solid #ccc;
+}
+.footer-top {
+    margin-bottom: 30px;
+}
+.footer-col {
+    width: 20%;
+}
+.about-col {
+    width: 30%;
+}
+.footer-col h3, .footer-col h4 {
+    margin-bottom: 20px;
+}
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+.newsletter-form input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    padding: 5px;
+    margin-right: 10px;
+}
+.newsletter-form button {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+    cursor: pointer;
+}
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    text-align: center;
+}
