@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    padding: 20px;
+    margin: auto;
+}
+
+.div-style{
+    font-size: 25px;
+    flex: 1;
+    width: 50%;
+    background-color: rgb(62, 154, 234);
+    color: white;
+    padding: 20px ;
+    border-color: rgb(62, 154, 234);
+    border-style: solid;
+    border-top-width: 125px;
+    border-bottom-width: 100px;
+    margin: 3% auto;
+}
+
+#register-form {
+    font-size: 20px;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 50%;
+    margin: 3% auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(96, 95, 95);
+    align-content: center;
+}
+
+.form-input {
+    display: block;
+    background-color: #b8b8b8;
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 4%;
+    border: 2px solid #b8b8b8;
+    border-radius: 15px;
+}
+
+.custom-border {
+    font-size: 20px;
+    background-color: blue;
+    border-radius: 15px;
+    width: 120px;
+    height: 50px;
+    color: #ffffff;
+}
