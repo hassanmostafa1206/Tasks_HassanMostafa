@@ -1,0 +1,245 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* global style */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.padding-top-bottom {
+    padding: 3% 0%;
+}
+
+.bg-light {
+    background-color: rgb(238, 238, 238);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.bg-gold {
+    background-color: goldenrod;
+}
+.dark{
+    color: rgb(45, 45, 45);
+}
+.btn-white{
+    padding: 1%;
+    color: rgb(111, 111, 111);
+    background-color: white;
+     position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+}
+.btn-blue:hover{
+    color: rgb(0, 230, 218);
+}
+
+.position-relative{
+    position: relative;
+}
+
+/* custom style */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+nav {
+    padding: 1% 0%;
+        position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    color: white;
+        z-index: 9999;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    width: 26%;
+}
+
+.flex-box {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-start (default) , flex-end , center , space-between space-around , space-evenly */
+    justify-content: space-between;
+    /* justify-content: space-around;
+    justify-content: space-evenly; */
+    background-color: antiquewhite;
+    /* row , row-reverse , column , column-reverse */
+    /* flex-direction: row; */
+    /* row-gap: px / %; */
+    /* align-items == > stretch , flex-start , flex-end , center */
+    align-items: center;
+    /* align-content ==> flex-start , flex-end , center , space-between , space-around , space-evenly */
+}
+
+.custom-align-self {
+    align-self: flex-end;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0px 0px 5px 4px lightgray;
+    padding: 2%;
+    background-color: white;
+}
+
+/* display ==> block , inline , inline-block , flex */
+
+#up-arrow {
+    background: black;
+    color: white;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    font-size: 21px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px #646363;
+    position: fixed;
+    right: 2%;
+    top: 93%;
+
+}
+
+.custom-height {
+    height: 600px;
+}
+.services-card{
+    width: 30%;
+    box-shadow: 0px 0px 5px 2px rgb(174, 174, 174);
+    margin-top: 4%;
+}
+.services-card img{
+    width: 100%;
+    display: block;
+}
+.services-card-body{
+    padding: 3%;
+}
+.services-card-body h3{
+    color: rgb(0, 230, 218);
+}
+.profile-pho {
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    z-index: 2;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.profile-pho img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.profile-phot {
+    position: absolute;
+    bottom: 37%;
+    right: 38%;
+    z-index: 2;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.profile-phot img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.profile-photo {
+    position: absolute;
+    bottom: 37%;
+    right: 6%;
+    z-index: 2;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.profile-photo img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card-overlay{
+    background-color: rgba(18, 18, 18, 0.705);
+    position: absolute;
+    top: 1%;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 3%;
+    align-items: flex-end;
+    display: none;
+}
+
+.custom-flex{
+    flex-direction: column;
+    justify-content: center;
+}
+.services-card:hover .card-overlay{
+    display: flex;
+}
+.float-l{
+    float: left;
+}
+.dis-flex{
+    display: flex;
+    gap: 15%;
+}
+
+.cart{
+    
+}
+/* position ==> static (default) , fixed , sticky , relative , absolute  */
+/* left , right , top , bottom , z-index */
+/* display ==> block , inline , inline-block , flex , none */
