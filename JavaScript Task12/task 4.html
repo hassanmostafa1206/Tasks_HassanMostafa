@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search and Add Courses</title>
+</head>
+<body>
+<h1>Search for or Add a Course</h1>
+<p>Click the button to search for a course or add a new one.</p>
+<button onclick="checkCourse()">Start Process</button>
+
+<script>
+    const courses = ["HTML", "CSS", "JavaScript", "Python", "React"];
+    function checkCourse() {
+        const userCourse = prompt("Enter the course name:");
+
+        if (userCourse === null || userCourse.trim() === "") {
+            alert("Operation canceled or no input was provided.");
+            return;
+        }
+        const formattedCourse = userCourse.charAt(0).toUpperCase() + userCourse.slice(1).toLowerCase();
+        let courseFound = false;
+        for (let i = 0; i < courses.length; i++) {
+            if (courses[i] === formattedCourse) {
+                courseFound = true;
+                break;
+            }
+        }
+        if (courseFound) {
+            alert(`✅ The course "${formattedCourse}" already exists in the list.`);
+        } else {
+            courses.push(formattedCourse);
+            alert(`➕ The course "${formattedCourse}" was not found and has been added to the list.`);
+            console.log("Updated Course List:", courses);
+        }
+    }
+</script>
+</body>
+</html>

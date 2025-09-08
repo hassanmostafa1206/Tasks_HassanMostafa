@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Evaluator</title>
+</head>
+<body>
+<h1>Student Grade Evaluator</h1>
+<button onclick="evaluateGrade()">Enter Grade</button>
+<p>The grade is: <span id="result"></span></p>
+
+<script>
+    function evaluateGrade() {
+        const resultDisplay = document.getElementById('result');
+        let input = prompt("Enter the student's grade:");
+        if (input === null || input.trim() === '' || isNaN(parseFloat(input))) {
+            resultDisplay.textContent = 'Please enter a valid number.';
+            return;
+        }
+        let grade = parseFloat(input);
+        if (grade < 0 || grade > 100) {
+            resultDisplay.textContent = 'Please enter a grade between 0 and 100.';
+            return;
+        }
+        if (grade >= 90) {
+            resultDisplay.textContent = 'A';
+        } else if (grade >= 80) {
+            resultDisplay.textContent = 'B';
+        } else if (grade >= 70) {
+            resultDisplay.textContent = 'C';
+        } else if (grade >= 60) {
+            resultDisplay.textContent = 'D';
+        } else {
+            resultDisplay.textContent = 'F';
+        }
+    }
+</script>
+</body>
+</html>

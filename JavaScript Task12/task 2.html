@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Loop</title>
+</head>
+<body>
+<h1>Conditional Loop Task</h1>
+<p>The loop will stop when you enter the name "Hassan" (case-sensitive).</p>
+<button onclick="startLoop()">Start Interaction</button>
+
+<script>
+    function startLoop() {
+        const breakName = "Hassan";
+        const maxAttempts = 5;
+        for (let i = 0; i < maxAttempts; i++) {
+            const userName = prompt(`Enter your name (Attempt ${i + 1} of ${maxAttempts}):`);
+            if (userName === null) {
+                alert("You have canceled the process.");
+                break;
+            }
+            if (userName === breakName) {
+                alert("Correct! The loop has stopped.");
+                break;
+            }
+            alert("Incorrect name. Please try again.");
+        }
+        alert("The loop has finished.");
+    }
+</script>
+</body>
+</html>

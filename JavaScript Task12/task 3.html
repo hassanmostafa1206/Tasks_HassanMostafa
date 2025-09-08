@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Loop Function</title>
+</head>
+<body>
+<h1>Advanced Loop Function</h1>
+<p>Open the console (F12) to see the output. The script will now ask you to provide missing parameters.</p>
+
+<button onclick="getUserInput(10, 20, 15, 18)">Run Loop with All Parameters</button>
+<button onclick="getUserInput(10, 20, 15)">Run Loop with 3 Parameters</button>
+<button onclick="getUserInput(10, 20)">Run Loop with 2 Parameters</button>
+
+<script>
+    function looping(startNum, endNum, continueNum, breakNum) {
+        console.log(`\n--- Loop starting with parameters: start=${startNum}, end=${endNum}, continue=${continueNum}, break=${breakNum} ---`);
+        if (continueNum >= breakNum) {
+            alert("Error: The 'continue' number must be less than the 'break' number.");
+            console.error("Error: The 'continue' number must be less than the 'break' number.");
+            return;
+        }
+        for (let i = startNum; i <= endNum; i++) {
+            if (i === breakNum) {
+                console.log(`Breaking loop at ${breakNum}.`);
+                break;
+            }
+            if (i === continueNum) {
+                console.log(`Skipping number at ${continueNum}.`);
+                continue;
+            }
+            console.log(i);
+        }
+    }
+    function getUserInput(startNum, endNum, continueNum, breakNum) {
+        if (typeof continueNum === 'undefined' || continueNum === null) {
+            const input = prompt("Please enter the 'continue' number:");
+            if (input === null || isNaN(input)) {
+                alert("Invalid input. Please try again with a valid number.");
+                return;
+            }
+            continueNum = parseFloat(input);
+        }
+        if (typeof breakNum === 'undefined' || breakNum === null) {
+            const input = prompt("Please enter the 'break' number:");
+            if (input === null || isNaN(input)) {
+                alert("Invalid input. Please try again with a valid number.");
+                return;
+            }
+            breakNum = parseFloat(input);
+        }
+        looping(startNum, endNum, continueNum, breakNum);
+    }
+</script>
+</body>
+</html>
