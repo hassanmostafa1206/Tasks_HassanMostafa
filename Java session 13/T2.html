@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java</title>
+</head>
+<body>
+
+    <script>
+
+        var users = [
+         {
+            name: 'Hassan',
+            Job: 'ENG',
+            address: 'Beni-Suef',
+            age: 19,
+
+         },
+        {
+            name: 'Ahmed',
+            Job: 'DR',
+            address: 'Beni-3dy',
+            age: 15
+        },
+        {
+            name: 'Jo',
+            Job: 'PRO',
+            address: 'Beni-7der',
+            age: 20
+        }
+        ]
+        var index = users.findIndex(user => user.age === 15);
+        console.log(index !== -1 ? `✅ Age is founded at index ${index}.` : "❌ Age not found.");
+
+
+        console.log(users)
+        users.forEach((item , i , arr) => {
+            console.log(item)
+            console.log(item.age)
+        })
+
+
+    </script>
+
+</body>
+</html>

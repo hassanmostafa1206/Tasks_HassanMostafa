@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java</title>
+</head>
+<body>
+
+<script>
+    var courses = ["HTML", "CSS", "BootStrap", "JS"];
+    var tracks = ["Front", "Web"];
+    var trackList = courses.concat(tracks);
+
+    trackList.splice(2, 0, "Node.js", "Regular", "Angular");
+    trackList.splice(4, 1, "PhP");
+
+    console.log("Initial trackList:", trackList);
+
+    for (var i = 0; i < trackList.length; i++) {
+        console.log(trackList[i]);
+    }
+
+    var p = prompt("Course name");
+
+    if (p === null || p.trim() === "") {
+        alert("❌ Invalid input. Please enter a valid course name.");
+    } else {
+        var ind = trackList.findIndex((ele) => ele === p);
+
+        if (ind !== -1) {
+            console.log(`✅ Course "${p}" found at index ${ind}.`);
+        } else {
+            var insertIndex = trackList.length;
+            trackList.splice(insertIndex, 0, p);
+            console.log(`➕ Course "${p}" was not found. Added at index ${insertIndex}.`);
+            console.log("Updated trackList:", trackList);
+        }
+    }
+</script>
+
+</body>
+</html>

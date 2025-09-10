@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Final Users List</title>
+</head>
+<body>
+<script>
+    var users = [];
+    var numberOfUsers = prompt("Enter number of users today:");
+
+    for (var i = 0; i < numberOfUsers; i++) {
+        var name = prompt("Enter name for user " + (i + 1));
+        var id = prompt("Enter ID for user " + (i + 1));
+        var balance = prompt("Enter balance for user " + (i + 1));
+
+        users.push({ name: name, id: id, balance: balance });
+    }
+
+    // Search
+    var searchId = prompt("Enter ID to search:");
+    var index = users.findIndex(user => user.id === searchId);
+    alert(index !== -1 ? `✅ User found at index ${index}` : "❌ User not found");
+
+    // Edit
+    var editId = prompt("Enter ID to edit balance:");
+    var newBalance = prompt("Enter new balance:");
+    var editIndex = users.findIndex(user => user.id === editId);
+
+    if (editIndex !== -1) {
+        users[editIndex].balance = newBalance;
+        alert(`✏️ Balance updated for ${users[editIndex].name}`);
+    } else {
+        alert("❌ User not found for editing");
+    }
+
+    // Delete
+    var deleteId = prompt("Enter ID to delete user:");
+    var deleteIndex = users.findIndex(user => user.id === deleteId);
+
+    if (deleteIndex !== -1) {
+        alert(`🗑️ User deleted: ${users[deleteIndex].name}`);
+        users.splice(deleteIndex, 1);
+    } else {
+        alert("❌ User not found for deletion");
+    }
+
+    // Final list on page
+    document.write("<h2>📋 Final List of Users:</h2>");
+    users.forEach(function(user, i) {
+        document.write(`<p>User ${i + 1}: Name = ${user.name}, ID = ${user.id}, Balance = ${user.balance}</p>`);
+    });
+</script>
+</body>
+</html>
