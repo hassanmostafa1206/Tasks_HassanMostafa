@@ -1,0 +1,335 @@
+.carousel-item img{
+    height: 500px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+.carousel-caption{
+    color: black;
+}
+.bg-beige {
+  	background-color: #e2dac1;
+}
+.icon-hover{
+    font-size: 40px;
+    color: #6c757d;
+}
+.icon-hover:hover {
+    color: #000;
+}
+a.hover-red{
+    color: black;
+    text-decoration: none;
+}
+.hover-red:hover{
+    color: rgb(203, 44, 0);
+}
+a.red-hov{
+    color: black;
+}
+a.red-hov:hover{
+    color: rgb(203, 44, 0);
+}
+a.hover-rd{ /*contact*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.hover-rd:hover{
+    color: rgb(203, 44, 0);
+}
+.hover-r{
+    background-color: #000;
+    color: white;
+}
+.hover-r:hover{
+    color: #ffffff;
+    background-color: rgb(203, 44, 0);
+    border: 1px solid rgb(203, 44, 0);
+}
+.hover-shop{
+    border: 1px solid black;
+}
+.hover-shop:hover{
+    color: white;
+    background-color: #000;
+}
+.shop-btn:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+.view{
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+}
+.view:hover{
+    background-color: none;
+    color: green;
+    border: 1px solid green;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card-img-overlay h6{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+.card-img-top {
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;*/
+    height: 200px;
+    object-fit: cover;
+}
+.card:hover {
+    box-shadow: 0 15px 15px 15px rgba(0.3, 1, 0.3, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+.icon-box {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    color: #000;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.icon-box:hover {
+    background-color: black;
+    color: white;
+}
+.hover-icons{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+.card:hover .hover-icons {
+    opacity: 1;
+}
+.tooltip-label {
+    position: absolute;
+    right: 130%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.icon-box:hover .tooltip-label {
+    opacity: 1;
+}
+.owl-carousel {
+  padding: 20px 0;
+}
+.carousel-wrapper {
+    position: relative;
+}
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+.carousel-wrapper:hover .carousel-nav {
+  opacity: 1;
+  pointer-events: auto;
+}
+.carousel-arrow {
+    background-color: #fff;
+    color: #000;
+    padding: 1.25%;
+    border: 2%;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.carousel-arrow:hover {
+    background-color: #000;
+    color: #fff;
+}
+.dropdown-toggle::after {
+    margin-left: 0.3rem;
+}
+.flag-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+.divider {
+    border-left: 1px solid #a2a2a2;
+    height: 30px;
+}
+.zoom-box img {
+    transition: transform 0.5s ease;
+}
+.zoom-box:hover img {
+    transform: scale(1.05);
+}
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+.store-img {
+    transition: filter 0.3s ease;
+    filter: brightness(100%);
+}
+.store-img:hover {
+    filter: brightness(120%) contrast(70%);
+}
+.grayscale-hover {
+    transition: filter 0.5s ease;
+    filter: brightness(90%) contrast(140%);
+}
+.grayscale-hover:hover {
+    filter: grayscale(100%) brightness(105%) contrast(25%);
+}
+@keyframes shake-horizontal {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(6px); }
+    100% { transform: translateX(0); }
+}
+.hover-shake:hover {
+    animation: shake-horizontal 1s ease;
+}
+.animate-right{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+}
+.animate-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease;
+}
+.animate-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.animate-down {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 1s ease;
+}
+.animate-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+}
+.animate-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes slideInFront {
+  0% {
+    opacity: 0;
+    transform: scale(1.1) translateZ(50px);
+  }
+  100% {
+	opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+.carousel-item {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+.carousel-item.active {
+	visibility: visible;
+	position: relative;
+	z-index: 1;
+	animation: slideInFront 0.8s ease forwards;
+}
+.circle {
+	width: 10%;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	background-color: white;
+	color: #c92a2a;
+	font-weight: bold;
+	font-size: 200%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	cursor: pointer;
+	border: 1px solid #c92a2a;
+}
+.red-hover:hover {
+	background-color: #f8d7da;
+	transform: translateY(-8px);
+	color: #c92a2a;
+}
+.red-solid {
+	background-color: #c92a2a;
+	color: white;
+	transition: transform 0.3s ease;
+}
+.red-solid:hover {
+  	transform: translateY(-8px);
+}
+.sale-img {
+	width: 51%;
+	max-height: 180px;
+  	transition: transform 0.3s ease;
+	transform: translateX(-50%);
+	top: 55%;
+	left: 50%;
+	filter: opacity(40%);
+}
+.sale-img:hover {
+  	transform: translateX(-50%) translateY(8%);
+}
+.image-slider {
+	display: flex;
+	gap: 15px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.image-slider .col {
+	flex: 0 0 auto;
+	width: 16.666%;
+	transition: transform 0.5s ease;
+}
